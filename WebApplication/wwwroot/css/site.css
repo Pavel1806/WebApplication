@@ -1,0 +1,179 @@
+﻿
+.General {
+    width: 630px;
+    margin: 125px auto;
+    background-color: #d5e8d4;
+    padding-bottom: 10px;
+    border: 1px solid grey;
+}
+.General2 {
+    width: 550px;
+    margin: 105px auto;
+    background-color: #d5e8d4;
+    padding-bottom: 10px;
+    border: 1px solid grey;
+}
+.Users {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: middle;
+    height: 30px;
+}
+.User {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: middle;
+    height: 30px;
+}
+.accountTable {
+    width: 520px;
+    height: 200px;
+    margin: 0px 15px 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+}
+.inAccountTable {
+    font-size: 18px;
+    line-height: 22px;
+}
+.accountForm, .profileForm {
+    margin-top: 15px
+}
+    .accountForm label, .profileForm label {
+        margin-left: 25px
+    }
+
+    .accountForm div, .profileForm div {
+        margin-top: 20px;
+    }
+    .profileForm select {
+        display: inline-block;
+        float: right;
+        margin-right: 25px;
+        width: 358px;
+        height: 21px;
+    }
+
+.profileTable {
+    width: 520px;
+    height: 200px;
+    margin: 10px 15px 0px 15px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+}
+.inProfileTable {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.input {
+    display: inline-block;
+    float: right;
+    margin-right: 25px;
+    width: 350px;
+}
+.submit {
+    display: inline-block;
+    color: white;
+    background-color: #60a917;
+    float: right;
+    margin-right: 25px;
+    width: 120px;
+}
+.divMenu {
+    width: 600px;
+    height: 30px;
+    margin: 0px 15px 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+}
+
+#myTable tr.header {
+    background-color: #f1f1f1;
+}
+#myInput {
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    bottom: 3px;
+}
+#myTable {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+div img {
+    position: relative;
+    top: 4px;
+}
+.imgButton {
+    display: inline-block;
+    
+}
+.imgButtonLeft {
+    display: inline-block;
+    margin-right: 4px;
+}
+.divTable {
+    width: 600px;
+    height: 300px;
+    margin: 10px 15px 0px 15px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+}
+.divDepartment {
+    display: inline-block;
+    position: relative;
+    left: 115px;
+    bottom: 3px;
+}
+.selectDepartment {
+    display: inline-block;
+    position: relative;
+    left: 115px;
+    bottom: 3px;
+}
+
+.selected {
+    background-color: #f1f1f1;
+}
+
+tr {
+    cursor: pointer;
+    height: 30px
+}
+th {
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+}
+td {
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+    button .edit, button .delete {
+        float: left;
+    }
+
+.submitError {
+    color: white;
+    background-color: #60a917;
+    width: 150px;
+    margin-left: 220px;
+}
+.text {
+    font-size: 12px;
+}

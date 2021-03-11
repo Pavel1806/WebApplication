@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="General">
+    <div class="Users">
+        Users
+    </div>
+    <div class="divMenu">
+       
+    </div>
+    <div class="divTable">
+        <p style="font-size: 18px; line-height: 20px; text-align: center">Данный Email уже есть в списке, выберете другой</p>
+        
+        <input class="submitError" style="margin-left: 220px" type="submit" name="" value="Вернуться обратно" onclick="document.location = '/home/edit?email=@ViewBag.Email'">
+        
+    </div>
+</div>

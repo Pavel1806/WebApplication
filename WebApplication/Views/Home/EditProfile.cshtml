@@ -1,0 +1,50 @@
+﻿
+<div class="General2">
+    <div class="User">
+        User
+    </div>
+    <div class="accountTable">
+        <div class="inAccountTable">Account</div>
+        <form class="accountForm" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input class="input" placeholder="Name" type="text" name="name" value="@ViewBag.Name">
+            </div>
+            <div>
+                <label for="email" style="margin-left: 25px">Email</label>
+                <input class="input" placeholder="Email" type="text" name="email" value="@ViewBag.Email">
+            </div>
+        </form>
+    </div>
+    <div class="profileTable">
+        <div class="inProfileTable">Profile</div>
+        <form class="profileForm" method="post" action="~/Home/EditNewProfile?depid=@ViewBag.DepId&lastnamee=@ViewBag.LastName">
+            <div>
+                <label for="name">FirstName</label>
+                <input class="input" placeholder="firstname" type="text"  value="@ViewBag.FirstName" name="firstname">
+            </div>
+            <div>
+                <label for="email">LastName</label>
+                <input class="input" placeholder="lastname" type="text" value="@ViewBag.LastName" name="lastname">
+            </div>
+            <div>
+                <label for="department" >Department</label>
+                <select name="dep">
+                    @if (ViewBag.Dep == "HR")
+                    {
+                        <option selected>HR</option>
+                        <option>Accounting</option>
+                    }
+                    else
+                    {
+                        <option>HR</option>
+                        <option selected>Accounting</option>
+                    }
+                </select>
+            </div>
+            <div >
+                <input class="submit" type="submit" name="" value="Save">
+            </div>
+        </form>
+    </div>
+</div>

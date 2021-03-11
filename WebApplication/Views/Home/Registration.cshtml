@@ -1,0 +1,45 @@
+﻿
+<div class="General2">
+    <div class="User">
+        User
+    </div>
+    <div class="accountTable" style="height: 200px;">
+        <div class="inAccountTable" >Account<p style="font-size: 12px; line-height:12px; margin: 0">(после заполнения и сохранения формы 'Account', сможете заполнить форму 'Profile')</p></div>
+        <form class="accountForm" action="~/Home/AddingNewAccount" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input class="input" placeholder="Name" type="text" name="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="input" placeholder="Email" type="text" name="email">
+            </div>
+            <div>
+                <input class="submit" type="submit"  value="Save">
+            </div>
+        </form>
+    </div>
+    <div class="profileTable">
+        <div class="inProfileTable">Profile</div>
+        <form class="profileForm" method="post">
+            <div>
+                <label for="name" >FirstName</label>
+                <input class="input" placeholder="firstname" type="text" name="">
+            </div>
+            <div>
+                <label for="email">LastName</label>
+                <input class="input" placeholder="lastname" type="text" name="" >
+            </div>
+            <div>
+                <label for="department">Department</label>
+                <select>
+                    <option>HR</option>
+                    <option>Accounting</option>
+                </select>
+            </div>
+            @*<div>
+                <input class="submit" type="submit" name="" value="Save">
+            </div>*@
+        </form>
+    </div>
+</div>

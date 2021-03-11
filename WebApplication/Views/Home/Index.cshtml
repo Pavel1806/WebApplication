@@ -1,0 +1,95 @@
+﻿@model IEnumerable<ViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="General">
+    <div class="Users">
+        Users
+    </div>
+    <div class="divMenu">
+        <div class="imgButtonLeft">
+            <a href="/home/registration"><img src="Plus.png"></a>
+        </div>
+        <div class="imgButton">
+            <button class="edit"><img src="change.png"></button>
+        </div>
+        <div class="imgButton">
+            <button class="delete"><img src="del.png"></button>
+        </div>
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="LastName">
+
+        <div class="divDepartment">Department</div>
+        <select class="selectDepartment">
+            <option value="All" selected>All</option>
+            <option value="HR">HR</option>
+            <option value="Accounting" >Accounting</option>
+        </select>
+    </div>
+    <div class="divTable">
+        <table id="myTable">
+            <tr class="header">
+                <th>
+                    Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    FirstName
+                </th>
+                <th>
+                    LastName
+                </th>
+                <th>
+                    Department
+                </th>
+            </tr>
+            @foreach (ViewModel item in Model)
+            {
+                if (item.Title == "HR")
+                {
+                    <tr position="HR">
+                        <td>
+                            @item.Name
+                        </td>
+                        <td>
+                            @item.Email
+                        </td>
+                        <td>
+                            @item.FirstName
+                        </td>
+                        <td>
+                            @item.LastName
+                        </td>
+                        <td>
+                            @item.Title
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr position="Accounting">
+                        <td>
+                            @item.Name
+                        </td>
+                        <td>
+                            @item.Email
+                        </td>
+                        <td>
+                            @item.FirstName
+                        </td>
+                        <td>
+                            @item.LastName
+                        </td>
+                        <td>
+                            @item.Title
+                        </td>
+                    </tr>
+                }
+
+            }
+        </table>
+    </div>
+</div>
